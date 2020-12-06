@@ -1,14 +1,10 @@
 import React from 'react'
-import './App.css'
-// import Logo from './Logo'
+import { renderRoutes } from 'react-router-config'
+import { HashRouter } from 'react-router-dom'
+import routes from './router'
 
 function App() {
-  return (
-    <div className="App">
-      1231231
-      {/* <Logo name="zzp" size={14} /> */}
-    </div>
-  )
+  return <HashRouter>{renderRoutes(routes)}</HashRouter>
 }
 
 export default App
